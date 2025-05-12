@@ -5,6 +5,6 @@ ibm_minio:
   minio_instance_name: "minio"
   minio_root_user: "<path:arn:aws:secretsmanager:us-east-2:435377327995:secret:fyre-sre-dev/sremat-test1/minio#sm_minio_user>"
   minio_root_password: "<path:arn:aws:secretsmanager:us-east-2:435377327995:secret:fyre-sre-dev/sremat-test1/minio#sm_minio_password>"
-  minio_storage_class: "nfs-client"
+  minio_storage_class: "nfs-client111"
   minio_storage_size: "40Gi"
   minio_image: "quay.io/minio/minio:latest"
