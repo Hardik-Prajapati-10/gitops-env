@@ -1,4 +1,4 @@
-merge-key: "fyre-sre-dev/sremat-test1/aibroker01"
+merge-key: "fyre-sre-dev/sremat-test1/sremat"
 
 ibm_minio:
   minio_namespace: "minio"
