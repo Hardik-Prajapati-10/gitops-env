@@ -1,0 +1,62 @@
+
+merge-key: "fyre-dev/sremat-test1/aibroker-inst-1/aibroker-tenant05"
+
+ibm_aibroker_tenant:
+  # aibroker
+  tenant_id: "aibroker-tenant05"
+  mas_aibroker_tenant_name: "tenant05"
+  aibroker_namespace: "mas-aibroker-inst-1-aibroker"
+  mas_aibroker_provision_tenant: "provision-tenant"
+  mas_instance_id: "aibroker-inst-1"
+  tenantNamespace: "aibroker-tests3"
+  cluster_domain: "sremat-test1.cp.fyre.ibm.com"
+  in_saas_env: "true"
+  ibm_entitlement_key: "<path:arn:aws:secretsmanager:us-east-2:435377327995:secret:fyre-dev/sremat-test1/ibm_entitlement#entitlement_key>"
+
+  mas_icr_cp: "docker-na-public.artifactory.swg-devops.com/wiotp-docker-local"
+  mas_icr_cpopen: "docker-na-public.artifactory.swg-devops.com/wiotp-docker-local/cpopen"
+
+  # dro
+  artifactory_token: "<path:arn:aws:secretsmanager:us-east-2:435377327995:secret:fyre-dev/sremat-test1/ibm_entitlement#aibroker_image_pull_secret_b64>"
+  drocfg_url: "https://ibm-data-reporter-redhat-marketplace.apps.sremat-test1.cp.fyre.ibm.com"
+  drocfg_ca: "<path:arn:aws:secretsmanager:us-east-2:435377327995:secret:fyre-dev/sremat-test1/dro#drocfg_ca_tenant>"
+  drocfg_registration_key: "<path:arn:aws:secretsmanager:us-east-2:435377327995:secret:fyre-dev/sremat-test1/dro#drocfg_registration_key>"
+
+  # sls
+  slscfg_ca_tenant: "<path:arn:aws:secretsmanager:us-east-2:435377327995:secret:fyre-dev/sremat-test1/sls#slscfg_ca_tenant>"
+  slscfg_url: "https://sls.ibm-sls.ibm-sls.apps.sremat-test1.cp.fyre.ibm.com"
+  slscfg_registration_key: "<path:arn:aws:secretsmanager:us-east-2:435377327995:secret:fyre-dev/sremat-test1/sls#slscfg_registration_key>"
+  mas_aibroker_sls_subscription_id: "001"
+  
+  # RSL ##review
+  rsl_url: "http://sandbox43-1.fyre.ibm.com:3001/api/v3/vector/query"
+  rsl_org_id: "<path:arn:aws:secretsmanager:us-east-2:435377327995:secret:fyre-dev/sremat-test1/rsl#rsl_org_id>"
+  rsl_token: "<path:arn:aws:secretsmanager:us-east-2:435377327995:secret:fyre-dev/sremat-test1/rsl#rsl_token>"
+  ##review
+
+  # watsonx
+  mas_aibroker_watsonxai_url: "https://us-south.ml.cloud.ibm.com"
+  mas_aibroker_watsonxai_project_id: "<path:arn:aws:secretsmanager:us-east-2:435377327995:secret:fyre-dev/sremat-test1/watsonx#watsonxai_project_id>"
+  mas_aibroker_watsonxai_apikey: "<path:arn:aws:secretsmanager:us-east-2:435377327995:secret:fyre-dev/sremat-test1/watsonx#watsonxai_apikey>"
+
+  # storage
+  mas_aibroker_storage_provider: "aws"
+  mas_aibroker_storage_host: "<path:arn:aws:secretsmanager:us-east-2:435377327995:secret:fyre-dev/sremat-test1/storage#sm_storage_host>"
+  mas_aibroker_storage_port: "<path:arn:aws:secretsmanager:us-east-2:435377327995:secret:fyre-dev/sremat-test1/storage#sm_storage_port>"
+  mas_aibroker_storage_region: "us-east-2"
+  mas_aibroker_storage_accesskey: "<path:arn:aws:secretsmanager:us-east-2:435377327995:secret:fyre-dev/sremat-test1/storage#sm_storage_accesskey>"
+  mas_aibroker_storage_secretkey: "<path:arn:aws:secretsmanager:us-east-2:435377327995:secret:fyre-dev/sremat-test1/storage#sm_storage_secretkey>"
+  mas_aibroker_storage_ssl: "true"
+
+
+  #tenant ##review
+  # S3
+  mas_aibroker_s3_endpoint_url: "https://m-aibroker-bucket.s3.us-east-2.amazonaws.com"
+  #mas_aibroker_s3_endpoint_url: "http://storage-service.storage.svc.cluster.local:9000"
+  mas_aibroker_s3_region: "us-east-2"
+  mas_aibroker_s3_bucket_prefix: "s3"
+
+  tenant_entitlement_type: "standard"
+  tenant_entitlement_start_date: "2025-06-11"
+  tenant_entitlement_end_date: "2049-11-11"
+  ##review
